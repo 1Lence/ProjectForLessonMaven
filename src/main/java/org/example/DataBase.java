@@ -48,7 +48,7 @@ public class DataBase {
              var conn = DriverManager.getConnection(URL);
              var pstmt = conn.prepareStatement(sql)) {
 
-            //Необходимо для ускорения работы метода
+            // Необходимо для ускорения работы метода
             // Отключение автоматической фиксации
             conn.setAutoCommit(false);
 
