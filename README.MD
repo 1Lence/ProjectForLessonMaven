@@ -11,3 +11,8 @@
 8) В конце работы код выполнялся очень медленно, из-за того что приходится обращаться к базе данных каждый раз, когда заполняю строку, поэтому отключил автоматическую фиксацию транзакций и добавил пакетную вставку, что уменьшило количество обращей к базе данных в разы
 9) Для дополнительного ускорения работы добавил вызов каждого метода в новый поток, предварительно запретив остальным потокам запускаться пока поток main(создание таблицы) не отработает. В связи с этим никаких конфликтов между потоками не возникает.
 10) Опять же я не знал как именно будет проверяться работа, поэтому явно указал при каждой компиляции создание таблиц и базы данных, хотя можно было и обойтись созданием БД и таблиц всего 1 раз.
+
+![Console](https://github.com/1Lence/ProjectForLessonMaven/blob/main/Screens/Вывод%20в%20Консоль.png)
+![Console](https://github.com/1Lence/ProjectForLessonMaven/blob/main/Screens/GraphMaxDeep.png)
+![Console](https://github.com/1Lence/ProjectForLessonMaven/blob/main/Screens/Graph%20Average%20Magnitude.png)
+![Console](https://github.com/1Lence/ProjectForLessonMaven/blob/main/Screens/Graph%20Average%20EarthShake.png)
